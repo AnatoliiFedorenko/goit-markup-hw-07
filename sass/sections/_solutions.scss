@@ -1,0 +1,53 @@
+/* ефективні рішення */
+.solutions {
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/background.jpg);
+    /* background-image: url(/images/background.jpg); */
+    padding: 200px 0;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head-solution {
+    color: var(--primary-white-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.solution-button {
+    margin: 0 auto;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-text-color);
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    letter-spacing: 0.06em;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.solution-button:hover,
+.solution-button:focus {
+    color: var(--accent-text-color);
+    background-color: var(--primary-white-color);
+}

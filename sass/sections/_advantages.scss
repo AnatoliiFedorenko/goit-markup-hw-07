@@ -1,0 +1,69 @@
+/* переваги */
+.advantages h2 {
+    /* display: none;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center; */
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.section-advantages {
+    display: flex;
+}
+
+.section-advantages .items {
+    width: 270px;
+}
+
+.section-advantages .items+.items {
+    margin-left: 30px;
+}
+
+.section-advantages h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    color: var(--primary-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.section-advantages p {
+    color: #757575;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.advantages-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 120px;
+    width: 270px;
+
+    background-color: #f5f4fa;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.advantages-icon {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    /* outline: 2px solid red; */
+}
