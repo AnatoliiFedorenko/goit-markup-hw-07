@@ -43,12 +43,12 @@
 }
 
 /* лого */
-.section-portfolio {
+.card-set {
     display: flex;
     flex-wrap: wrap;
 }
 
-.portfolio-flex {
+.card-set__item {
     /* display: block; */
     /* position: relative; */
     border: 1px solid #eeeeee;
@@ -60,45 +60,23 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+    
+    &:nth-child(n + 7) {
+        margin-bottom: 0;
+    }
 }
 
-.portfolio-flex:hover,
-.portfolio-flex:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-flex:nth-child(3n) {
-    margin-right: 0;
-}
-
-.portfolio-flex:nth-child(n + 7) {
-    margin-bottom: 0;
-}
-
-.portfolio-names {
-    padding: 20px 24px;
-}
-
-.section-portfolio h2 {
-    margin-bottom: 4px;
-
-    color: var(--primary-text-color);
-
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-
-.section-portfolio p {
-    color: #757575;
-
-    font-size: 16px;
-    line-height: 1.8;
-}
-
-.thumb {
+.product {
     position: relative;
     overflow: hidden;
 }
@@ -125,7 +103,7 @@
 //     transform: translateY(0);
 // }
 
-.product-content {
+.product__content {
     position: absolute;
     display: flex;
     align-items: center;
@@ -146,15 +124,37 @@
     transition-property: opacity, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .card-set__item:hover &,
+    .card-set__item:focus & {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
 }
 
-.product-content p {
+.product__content p {
     margin: 63px 24px;
     color: var(--primary-white-color);
 }
 
-.portfolio-flex:hover .product-content,
-.portfolio-flex:focus .product-content {
-    opacity: 1;
-    transform: translate(-50%, -50%);
+.product__meta {
+    padding: 20px 24px;
+}
+
+.product__name {
+    margin-bottom: 4px;
+
+    color: var(--primary-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.product__atribute {
+    color: #757575;
+
+    font-size: 16px;
+    line-height: 1.8;
 }
