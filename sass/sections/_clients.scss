@@ -1,28 +1,23 @@
 /* клієнти */
-.clients h2 {
-    color: var(--primary-text-color);
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-
-    margin-bottom: 50px;
+.clients__title {
+    @extend %title
 }
 
-.clients-list {
+.clients__list {
     display: flex;
     justify-content: center;
 }
 
-.clients-list .items {
+.clients__items {
     display: flex;
     align-items: center;
 }
 
-.clients-list .items+.items {
+.clients__items+.clients__items {
     margin-left: 30px;
 }
 
-.clients-link {
+.clients__link {
     width: 170px;
     height: 92px;
 
@@ -37,15 +32,15 @@
     transition-property: background-color, color, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+        border: 1px solid var(--accent-text-color);
+        border-radius: 4px;
+     }
 }
 
-.clients-icon {
+.clients__icon {
     fill: currentColor;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-    color: var(--accent-text-color);
-    border: 1px solid var(--accent-text-color);
-    border-radius: 4px;
 }

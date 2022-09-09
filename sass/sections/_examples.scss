@@ -3,28 +3,23 @@
     padding-bottom: 94px;
 }
 
-.examples h2 {
-    margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
+.examples__title{
+    @extend %title
 }
 
-.section-examples {
+.examples__section {
     display: flex;
 }
 
-.section-examples .item+.item {
+.examples__item+.examples__item {
     margin-left: 30px;
 }
 
-.section-examples .item {
+.examples__item {
     position: relative;
 }
 
-.examples-content {
+.examples__names {
     position: absolute;
     display: flex;
     align-items: center;
